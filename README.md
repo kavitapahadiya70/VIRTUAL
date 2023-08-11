@@ -1,44 +1,53 @@
+# Instagram Insights
 
-# Sentiment Analysis of Customer Reviews
-
-A tool that analyzes the overall sentiment of customer reviews for a specific product or service, whether it's positive or negative. This analysis is performed by using natural language processing algorithms and machine learning from the model `Reviews-Sentiment-Analysis` trained by Kaludi, allowing businesses to gain valuable insights into customer satisfaction and improve their products and services accordingly.
-
-This tool is built using the Gradio library and utilizes the `transformers` library for its machine learning capabilities.
+Instagram Insights is a Streamlit application that allows you to analyze and visualize your Instagram data like users not following you back, users you aren't following back, and more.
 
 # Web App
-Click [Here](https://huggingface.co/spaces/Kaludi/Reviews-Sentiment-Analysis_App) To View This App Online!
+Click [Here](https://huggingface.co/spaces/Kaludi/Instagram-Insights-Streamlit_App "Here") To View This App Online!
 
-![Image](https://github.com/Kaludii/Reviews-Sentiment-Analysis/blob/main/images/Sentiment.png?raw=true)
+![image](https://user-images.githubusercontent.com/63890666/227370342-1528acdc-5fdc-4ef9-a3a3-8e0dd3d1677d.png)
 
-## Model
+## Features
 
-The sentiment analysis tool uses a pre-trained model 'Reviews-Sentiment-Analysis' available on HuggingFace at [https://huggingface.co/Kaludi/Reviews-Sentiment-Analysis](https://huggingface.co/Kaludi/Reviews-Sentiment-Analysis).
+-   Visualize insights from your Instagram data like followers, following, follow requests, and more.
+-   Filter and download the data for further analysis.
+-   Easy to use interface.
 
-## Dataset
+## Usage
 
-The 'Reviews-Sentiment-Analysis' model was trained on a dataset of customer reviews also available on HuggingFace at [https://huggingface.co/datasets/Kaludi/data-reviews-sentiment-analysis](https://huggingface.co/datasets/Kaludi/data-reviews-sentiment-analysis).
+1.  Download your Instagram data by going to More > Your Activity > Download Your Information, and clicking on 'Request Download'. Make sure you download the data as a JSON file.
 
-## How to Use
+2.  When the data is emailed to you, upload all the files in the `followers_and_following`, which is in part 4 of the download folders, and upload the folder to the app.
 
-1.  Clone or download the repository.
-2.  Install the required libraries by running `pip install -r requirements.txt`.
-3.  Run the script using `python app.py`.
-4.  Input a customer review in the textbox and click on "Run".
-5.  The output will show the sentiment prediction of the review as either Positive or Negative along with the respective confidence score.
+3.  Use the filters in the sidebar to view and analyze different aspects of your Instagram data.
 
-## Libraries Used
+4.  Download the filtered data as CSV files for further analysis.
 
--   Gradio
--   Transformers
--   Numpy
+## Getting Started
+
+### Prerequisites
+
+-   Python 3.7 or higher
+-   Streamlit
 -   Pandas
--   Pickle
--   Scipy
+-   Plotly
 
-## Model
+To install the required libraries, run the following command:
 
-The model `Reviews-Sentiment-Analysis` was trained by Kaludi and is available on [HuggingFace](https://huggingface.co/Kaludi).
+`pip install streamlit pandas plotly` 
 
-## Contributor
+### How to Run
 
--   [Kaludi](https://github.com/Kaludii)
+1.  Clone this repository.
+
+`git clone https://github.com/Kaludii/Instagram-Insights.git` 
+
+2.  Navigate to the project directory.
+
+`cd Instagram-Insights` 
+
+3.  Run the Streamlit app.
+
+`streamlit run app.py` 
+
+4.  Open your web browser and visit `http://localhost:8501`.
